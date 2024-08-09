@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'select_kind.css' %}" />
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>당신이 궁금한 <span class='yellow'>밸런스</span>는?</h1>
+        </div>
+        <div class="button-container">
+            <div class="button-wrapper">
+                <button class="btn" onclick="redirectTo('/myapp/select_card')">
+                    <div>카드</div>
+                    <img src="/static/images/Credit_card.png" alt="Button 1 Image" class="button-image">
+                    <div><img src="/static/images/shadow.png" alt="Button 1 Image" class="button-image2"></div>
+                </button>
+            </div>
+            <div class="button-wrapper" onclick="redirectTo('/myapp/select_deposit')">
+                <button class="btn">
+                    <div>예금/적금</div>
+                    <img src="/static/images/Money_bag.png" alt="Button 2 Image" class="button-image">
+                    <div><img src="/static/images/shadow.png" alt="Button 1 Image" class="button-image2"></div>
+                </button>
+            </div>
+            <div class="button-wrapper" onclick="redirectTo('/myapp/select_insurance')">
+                <button class="btn">
+                    <div>보험</div>
+                    <img src="/static/images/Report.png" alt="Button 3 Image" class="button-image">
+                    <div><img src="/static/images/shadow.png" alt="Button 1 Image" class="button-image2"></div>
+                </button>
+            </div>
+            <div class="button-wrapper" onclick="redirectTo('/myapp/select_loan')">
+                <button class="btn">
+                    <div>대출</div>
+                    <img src="/static/images/Money.png" alt="Button 4 Image" class="button-image">
+                    <div><img src="/static/images/shadow.png" alt="Button 1 Image" class="button-image2"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

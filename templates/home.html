@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}" />
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>나만의 <span class='yellow'>금융 밸런스</span>를 찾자!</h1>
+        </div>
+        <div class="button-container">
+            <div class="button-wrapper">
+                <button class="btn" onclick="redirectTo('/myapp/select_kind')">
+                    <img src="/static/images/Balance.png" alt="Button 1 Image" class="button-image">
+                    <div>밸런스 찾기</div>
+                </button>
+            </div>
+            <div class="button-wrapper">
+                <button class="btn" onclick="redirectTo('/myapp/select_kind')">
+                    <img src="/static/images/House.png" alt="Button 2 Image" class="button-image">
+                    <div>KB홈으로 가기</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

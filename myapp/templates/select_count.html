@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'select.css' %}" />
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>밸런스를 진행할 <span class='yellow'>갯수</span>를 선택하세요</h1>
+        </div>
+        <div class="button-container">
+            <div class="button-wrapper">
+                <button class="btn" onclick="redirectTo('/select_kind')">
+                    <div><h1>10개</h1></div>
+                </button>
+            </div>
+            <div class="button-wrapper">
+                <button class="btn" onclick="redirectTo('/select_kind')">
+                    <div><h1>15개</h1></div>
+                </button>
+            </div>
+            <div class="button-wrapper">
+                <button class="btn" onclick="redirectTo('/select_kind')">
+                    <div><h1>20개</h1></div>
+                </button>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <img src="/static/images/Megaphone.png" alt="Button 1 Image" class="button-image">
+            <h1>밸런스가 많을수록 추천이 정확해집니다</h1>
+        </div>
+    </div>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'select.css' %}" />
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>당신이 궁금한 <span class='yellow'>카드 밸런스</span>는?</h1>
+        </div>
+        <div class="button-container">
+            <div class="button-wrapper">
+                <button class="btn" onclick="redirectTo('/myapp/select_count')">
+                    <div><h1>신용 카드</h1></div>
+                </button>
+            </div>
+            <div class="button-wrapper">
+                <button class="btn" onclick="redirectTo('/myapp/select_count')">
+                    <div><h1>체크 카드</h1></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
