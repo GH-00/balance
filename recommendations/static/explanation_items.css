@@ -1,0 +1,90 @@
+/* 전체 페이지를 Flexbox로 중앙 정렬 */
+body {
+    font-family: 'NanumSquareRound', Arial, sans-serif; /* 폰트 패밀리 설정 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EAF1F6;
+}
+
+/* 메인 컨테이너 */
+.container {
+    text-align: center;
+    width: 90%; /* 페이지 너비의 90% */
+    max-width: 1200px;
+    background-color:  #EAF1F6;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+/* 타이틀 스타일 */
+.title-container h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+/* 화이트박스 스타일 */
+.white-box {
+    display: inline-block; /* 텍스트 크기에 따라 상자가 조정되도록 설정 */
+    width: 80%; /* 두 박스의 너비를 동일하게 설정 */
+    max-width: 600px; /* 최대 너비를 설정하여 반응형 유지 */
+    background-color: white; /* 배경색을 흰색으로 설정 */
+    padding: 15px 25px; /* 텍스트 주위에 여백 추가 */
+    border-radius: 15px; /* 상자 모서리를 둥글게 설정 */
+    margin-top: 1rem; /* 위쪽에 약간의 여백 추가 */
+}
+
+.explanation-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열 설정 */
+    gap: 10px; /* 박스 사이의 간격 설정 */
+    margin: 50px 0; /* 상하 여백 설정 */
+}
+
+.text-white-box {
+    display: flex; /* Flexbox를 사용하여 내용 중앙 정렬 */
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* 배경색을 흰색으로 설정 */
+    padding: 30px; /* 텍스트 주위에 여백 추가 */
+    font-size: 20px; /* 폰트 크기 설정 */
+    font-weight: bold;
+    border-radius: 15px; /* 상자 모서리를 둥글게 설정 */
+    margin: 10px; /* 상자 주위에 여백 추가 */
+}
+
+/* 버튼 컨테이너 Flexbox를 사용하여 가로로 배치 */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    color: #333;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFB800;
+    transform: translateY(-1px);
+}
+
+.yellow {
+    color: #FFB800;
+    font-weight: bold;
+}

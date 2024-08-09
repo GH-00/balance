@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explanation Items</title>
+    <link rel="stylesheet" href="{% static 'explanation_items.css' %}">
+    <script>
+        function redirectTo(url) {
+            window.location.href = url; // window.location.href를 통해 새로운 URL로 이동
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>
+                <span class="white-box"><span class='yellow'>KB Star 정기예금 </span></span>
+            </h1>
+        </div>
+        <div class="explanation-container">
+            <div class="text-white-box">금리는 연 2.7%에서</br> 3.4% 사이예요</div>
+            <div class="text-white-box">text 2</div>
+            <div class="text-white-box">text 3</div>
+            <div class="text-white-box">만기 되면 자동으로</br> 재예치돼요</div>
+            <div class="text-white-box">text 5</div>
+            <div class="text-white-box">text 6</div>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button" onclick="redirectTo('/')">돌아가기</a>
+        </div>
+    </div>
+
+</body>
+</html>

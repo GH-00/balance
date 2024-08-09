@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="{% static 'recomm_items.css' %}">
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>
+                <span class="white-box">당신의 <span class="yellow">예금 </span>밸런스는...</span>
+            </h1>
+        </div>
+        <div class="image-container">
+            <img src="/static/images/KB_Start_deposit.png" alt="KB Start Deposit">
+        </div>
+        <div class="recomm-container">
+            <h2>
+                <span class="white-box"><span class='yellow'>KB Star 정기예금 </span>입니다!</span>
+            </h2>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button" onclick="redirectTo('../explanation_items')">상품 요약 보기</a>
+            <a href="#" class="button" onclick="location.href='https://url.kr/nh2fet'">상품 페이지 가기</a>
+            <a href="#" class="button" onclick="redirectTo('../recomm_others')">다른 추천상품 보기</a>
+        </div>
+    </div>
+</body>
+</html>

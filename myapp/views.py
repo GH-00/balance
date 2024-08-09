@@ -99,7 +99,7 @@ def make_qa(cate, chap, type_n):
     query = query_set
 
     template = '''
-        아래의 자료만을 사용하여 질문에 답하세요: 
+        아래의 자료만을 사용하여 질문에 답하세요:
         {context}
         답변은 해당 형식에 맞게 모아서 만들어주세요:
         {form}

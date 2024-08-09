@@ -26,4 +26,5 @@ def home(request):
 urlpatterns = [
     path("", home),
     path("myapp/",include('myapp.urls')),
+    path("recommendations/",include('recommendations.urls')),
 ]

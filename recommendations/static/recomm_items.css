@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+}
+
+/* 전체 페이지를 Flexbox로 중앙 정렬 */
+body {
+    font-family: 'NanumSquareRound', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EAF1F6;
+}
+
+* {
+	font-family: 'NanumSquareRound', Arial, sans-serif;
+}
+
+/* 메인 컨테이너 */
+.container {
+    text-align: center;
+    width: 90%; /* 페이지 너비의 90% */
+    max-width: 1200px;
+    background-color:  #EAF1F6;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+/* 타이틀 스타일 */
+.title-container h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+/* 흰색 상자 스타일 */
+.white-box {
+    display: inline-block; /* 텍스트 크기에 따라 상자가 조정되도록 설정 */
+    width: 80%; /* 두 박스의 너비를 동일하게 설정 */
+    max-width: 600px; /* 최대 너비를 설정하여 반응형 유지 */
+    background-color: white; /* 배경색을 흰색으로 설정 */
+    padding: 15px 25px; /* 텍스트 주위에 여백 추가 */
+    border-radius: 15px; /* 상자 모서리를 둥글게 설정 */
+    margin-top: 1rem; /* 위쪽에 약간의 여백 추가 */
+}
+
+/* 이미지 컨테이너 */
+.image-container {
+    margin: 8% 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 추천 컨테이너 */
+.recomm-container h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.recomm-container .white-box {
+    margin-top: 1rem; /* 추가적인 여백 설정 */
+}
+
+/* 버튼 컨테이너 Flexbox를 사용하여 가로로 배치 */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    color: #333;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFB800;
+    transform: translateY(-1px);
+}
+
+.yellow {
+    color: #FFB800;
+    font-weight: bold;
+}

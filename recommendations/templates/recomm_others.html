@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendation Others</title>
+    <link rel="stylesheet" href="{% static 'recomm_others.css' %}">
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>
+                <span class="white-box">당신의 또다른 <span class="yellow">예금 </span>밸런스는...</span>
+            </h1>
+        </div>
+        <div class="image-container">
+            <img src="{% static 'images/money_bag_shadow.png' %}" alt="KB Start Deposit">
+        </div>
+        <div class="recomm-others-container">
+            <div class="recomm-group">
+                <div class="small-white-box"><span class="yellow">상품 1</span></div>
+                <div class="button-group">
+                    <a href="#" class="button" onclick="redirectTo('../explanation_items')">상품 요약 보기</a>
+            <a href="#" class="button" onclick="location.href='https://url.kr/nh2fet'">상품 페이지 가기</a>
+                </div>
+            </div>
+            <div class="recomm-group">
+                <div class="small-white-box"><span class="yellow">상품 2</span></div>
+                <div class="button-group">
+                    <a href="#" class="button" onclick="redirectTo('../explanation_items')">상품 요약 보기</a>
+                    <a href="#" class="button" onclick="location.href='https://url.kr/nh2fet'">상품 페이지 가기</a>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button" onclick="redirectTo('/')">돌아가기</a>
+        </div>
+    </div>
+</body>
+</html>

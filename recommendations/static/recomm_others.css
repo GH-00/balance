@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+}
+
+/* 전체 페이지를 Flexbox로 중앙 정렬 */
+body {
+    font-family: 'NanumSquareRound', Arial, sans-serif; /* 폰트 패밀리 설정 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EAF1F6;
+}
+
+/* 메인 컨테이너 */
+.container {
+    text-align: center;
+    width: 90%; /* 페이지 너비의 90% */
+    max-width: 1200px;
+    background-color: #EAF1F6;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+/* 타이틀 스타일 */
+.title-container h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+/* 화이트 박스 스타일 */
+.white-box {
+    display: inline-block;
+    background-color: white; /* 배경색을 흰색으로 설정 */
+    padding: 15px 25px; /* 텍스트 주위에 여백 추가 */
+    border-radius: 15px; /* 상자 모서리를 둥글게 설정 */
+}
+
+/* 이미지 컨테이너 */
+.image-container {
+    margin: 5% 0;
+}
+
+.image-container img {
+    max-width: 90%;
+    height: auto;
+}
+
+/* 작은 화이트 박스 스타일 */
+.small-white-box {
+    background-color: white;
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+}
+
+/* recomm-others-container를 Flexbox로 가로로 중앙에 배치 */
+.recomm-others-container {
+    display: flex;
+    flex-wrap: wrap; /* 내용이 넘칠 때 다음 줄로 넘기기 */
+    gap: 40px; /* 그룹들 사이의 간격 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin: 20px 0; /* 상하 여백 설정 */
+}
+
+/* recomm-group은 가로로 배치 */
+.recomm-group {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    font-size: 20px;
+    gap: 20px; /* 화이트 박스와 버튼 그룹 사이의 간격 */
+}
+
+/* 버튼 그룹을 세로로 배치 */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 버튼 사이의 간격 */
+}
+
+/* 버튼 컨테이너 Flexbox를 사용하여 가로로 배치 */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    color: #333;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFB800;
+    transform: translateY(-1px);
+}
+
+.yellow {
+    color: #FFB800;
+    font-weight: bold;
+}
